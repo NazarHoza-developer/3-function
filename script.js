@@ -28,10 +28,10 @@ function degree(number, pow) {
 // 3
 function formatName (name2){
 if (!name2) {
-    return "";
+    return '';
 }
 name2 = stiring(name2);
-let letter = name2.split("");
+let letter = name2.split('');
 letter[0] = letter[0].toUpperCase();
 for (let i = 1; i < letter.length; i++) {
     letter[i] = letter[i].toLowerCase();
