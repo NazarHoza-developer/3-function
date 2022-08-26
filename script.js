@@ -32,7 +32,7 @@ if (!name2) {
 }
 name2 = stiring(name2);
 let letter = name2.split("");
-letter[1] =letter[0].toUpperCase();
+letter[0] = letter[0].toUpperCase();
 for (let i = 1; i < letter.length; i++) {
     letter[i] = letter[i].toLowerCase();
 }
