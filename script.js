@@ -1,4 +1,4 @@
-
+"use strict";
 //1
 function getMaxDigit(number) {
     let maxDigit = 0;
@@ -21,7 +21,7 @@ function degree(number, pow) {
     for (let i = 1; i <= pow ; i++){
         result = result * number;  
     }
-    return result;
+    return result;`1`
 }
 // console.log(degree(2, 4))
 
@@ -58,19 +58,10 @@ function convertCurrency(value) {
 
 //12
 // let name = promt("How it's your nome");
-function isPalyndrom (name) {
-    if (name == "мадам") {
-        result = true;
-    } else if (name == "кокос") {
-        result = false;
-    } else if (name == "Я несу гусеня") {
-        result = true; 
-    } else {
-        result == error;
-    }
-    //    return name;
+function isPalyndrom(name) {
+ return name.toLowerCase() === name.split("").reverse().join("").toLowerCase();
 }
-console.log(name);
+console.log(isPalyndrom("кокос"));
 // 13
 const sentence = deleteDuplicateLetter("Бісквіт був дуже ніжним") ;
 function deleteDuplicateLetter(rest){
