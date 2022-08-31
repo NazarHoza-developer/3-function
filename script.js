@@ -4,7 +4,6 @@ function getMaxDigit(number) {
     let maxDigit = 0;
     let digitStr = number.toString();
     let digitArr = digitStr.split('');
-    // console.log(digitArr);
     for (let i = 1; i < digitArr.length; i++) {
         if (maxDigit < +digitArr[i]) {
             maxDigit = digitArr[i];
@@ -23,7 +22,6 @@ function degree(number, pow) {
     }
     return result;`1`
 }
-// console.log(degree(2, 4))
 
 // 3
 function formatName (name2){
@@ -57,14 +55,7 @@ function convertCurrency(value) {
 // console.log(convertCurrency("1000UAH"))
 
 //12
-// let name = promt("How it's your nome");
 function isPalyndrom(name) {
  return name.toLowerCase() === name.split("").reverse().join("").toLowerCase();
 }
 console.log(isPalyndrom("кокос"));
-// 13
-const sentence = deleteDuplicateLetter("Бісквіт був дуже ніжним") ;
-function deleteDuplicateLetter(rest){
-console.log(rest);
-// return seconddigith (rest);
-}
